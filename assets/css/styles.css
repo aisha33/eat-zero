@@ -41,18 +41,6 @@
     --z-fixed: 100;
 }
 
-@media screen and (min-width: 768px) {
-     :root {
-        --biggest-font-size: 4rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
-}
-
 
 /*========== BASE ==========*/
 
@@ -66,35 +54,12 @@ html {
     scroll-behavior: smooth;
 }
 
-
-/*  .change-theme {
-            position: absolute;
-            right: 1rem;
-            top: 1.8rem;
-            color: var(--text-color);
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        */
-
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--text-color);
-    line-height: 1.6;
     background-color: #f1f1f1;
 }
-
-
-/*    .body1 {
-            background-image: url(https://bridge111.qodeinteractive.com/wp-content/uploads/2017/11/row-trans-4.png?id=150) !important;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 100%;
-            padding-top: 160px !important;
-            padding-bottom: 80px !important;
-        } */
 
 h1,
 h2,
@@ -184,7 +149,7 @@ img {
 .nav {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: #393939;
     align-items: center;
     font-size: 20px;
     height: 4.5rem;
@@ -220,7 +185,7 @@ img {
 }
 
 .phonenum {
-    font-size: 14px;
+    font-size: 20px;
     direction: ltr;
     color: #fff;
     margin-left: 5px;
@@ -230,6 +195,7 @@ img {
     position: absolute;
     left: 25px;
     top: 20px;
+    color: #fff;
 }
 
 .nav__toggle {
@@ -246,33 +212,34 @@ img {
         display: block;
         position: absolute;
         left: 15px;
-        top: 15px;
-        width: 30%;
-        height: 30%;
+        top: 30px;
+        font-size: 2rem;
+        color: #fff;
     }
     .nav {
         flex-direction: column;
         align-items: stretch;
         height: 10rem;
-        width: 100%;
-        margin-top: 0;
-    
-     
+        width: 50%;
+        margin: 0;
     }
     .nav__list {
         list-style-type: none;
         padding: 2rem;
+        padding-top: 6rem;
         text-align: center;
         display: none;
         background-color: #021812c7;
         width: 100%;
-        text-align: center;
         transition: .4s;
         box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
         border-radius: 0 0 1rem 1rem;
+        height: 60vh;
+        align-items: center;
     }
     .nav__link {
         transition: .3s;
+        font-size: 25px;
     }
     .nav__list .nav__item {
         display: block;
@@ -280,9 +247,9 @@ img {
     .nav__logo {
         position: absolute;
         top: 1px;
-        width: 100px;
-        height: 70px;
-        right: 15px;
+        width: 130px;
+        height: 86px;
+        right: 1px;
     }
     .active {
         display: block;
@@ -302,14 +269,9 @@ img {
     .button__home {
         padding: 4px 18px;
         font-size: 14px;
-        margin-right: 2%;
         margin-top: 4%;
     }
 }
-
-
-
-
 
 
 /* Change background header */
@@ -359,47 +321,50 @@ img {
 
 .home__container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5%;
+    margin-right: 15%;
 }
 
 .home {
     height: calc(110vh - var(--header-height));
-    background-image: linear-gradient(#65c4afbd, rgba(61, 65, 23, 0.438)), url("https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background-og.jpg");
+    background-image: linear-gradient( #4ebea2e5, #cbe4de63), url("https://up4net.com/uploads4/up4net.com162819912339141.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center bottom;
     overflow: hidden;
 }
 
 .home__title {
-    font-size: 70px;
-    color: #F1F3F2;
+    font-size: 100px;
+    color: #f1f1f1;
     margin-bottom: var(--mb-1);
     text-align: right;
     font-weight: 800;
     font-family: 'Amiri', serif;
 }
 
+.title-span {
+    color: #ffe73f;
+}
+
 .home__subtitle span {
     font-size: 30px;
-    color: #ffe73f;
+    color: rgba(53, 52, 52, 0.877);
     margin-right: 10px;
     font-weight: 800;
-    text-shadow: 1px 1px 1px #ffe73f;
 }
 
 .home__subtitle {
     font-size: 30px;
-    color: #F1F3F2;
+    color: rgba(53, 52, 52, 0.877);
     margin-bottom: var(--mb-4);
-    text-shadow: 1px 1px 1px #cccecd;
     text-align: right;
     font-family: 'Tajawal', sans-serif;
 }
 
 .hom__data {
-    margin-top: 0;
+    float: right;
 }
 
 .home__img {
@@ -515,6 +480,8 @@ img {
     transition: all .3s;
     background-color: #10ca9b63;
     margin-top: 25px;
+    width: 900px;
+    border-radius: 3px;
 }
 
 .about__items {
@@ -525,12 +492,18 @@ img {
     float: right;
 }
 
+.title2-span {
+    color: #ffe73f;
+    font-size: 50px;
+}
+
 .img-about {
     width: 350px;
     flex-shrink: 0;
     height: 450px;
     box-shadow: 4px 13px 25px 1px #0f0f0f91;
     transform: translateY(-80px);
+    border-radius: 3px;
 }
 
 .img1 {
@@ -538,14 +511,14 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: all .3s;
+    transition: all 3s;
     overflow: hidden;
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 992px) {
     .about__container {
-        max-width: 780px;
-        height: 400px;
+        max-width: 900px;
     }
 }
 
@@ -560,11 +533,19 @@ img {
         transform: translateY(-50px);
         box-shadow: none;
     }
+    .about__container {
+        background-color: #f1f1f1;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 @media screen and (max-width: 568px) {
     .img-about {
         transform: translateY(-50px);
+    }
+    .about__container {
+        background-color: #f1f1f1;
     }
 }
 
@@ -591,13 +572,13 @@ img {
     font-family: Tajawal;
     font-family: Amiri, sans-serif;
     font-size: 50px;
-    color: #01140f;
+    color: rgb(88, 87, 87);
 }
 
 .about .section-title {
     text-align: right;
     font-family: Tajawal;
-    color: #f8f5f5;
+    color: rgb(88, 87, 87);
     font-size: 20px;
 }
 
@@ -605,10 +586,10 @@ img {
     margin-bottom: var(--mb-3);
     font-family: Tajawal;
     text-align: right;
-    color: #030303;
+    color: rgb(88, 87, 87);
     font-size: 16px;
     line-height: 25px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 992px) {
@@ -939,7 +920,7 @@ img {
 
 .footer__container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: 'Tajawal', serif;
     flex-direction: row-reverse;
     margin-bottom: 10px;
@@ -950,14 +931,6 @@ img {
     height: 90px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.514);
-    position: absolute;
-    right: 100px;
-}
-
-.footer__description {
-    display: block;
-    font-size: var(--small-font-size);
-    margin: .25rem 0 var(--mb-3);
 }
 
 .footer__social {
@@ -1006,7 +979,16 @@ img {
     margin-top: 3px;
 }
 
-@media screen and (min-width: 960px) {
+
+/* For tall screens on mobiles y desktop*/
+
+@media screen and (max-width: 860px) {
+    .footer-s {
+        font-size: 1.6rem;
+    }
+    .footer__title {
+        font-size: 16px;
+    }
     body {
         margin: 0;
     }
@@ -1016,24 +998,13 @@ img {
     }
 }
 
-@media screen and (max-width: 860px) {
-    .footer-s {
-        font-size: 1.6rem;
-    }
-    .footer__title {
-        font-size: 16px;
-    }
-}
-
-
-/* For tall screens on mobiles y desktop*/
-
-@media (min-width:480px) {
+@media only screen and (max-width: 540px) {
     .popular .box-container .box {
-        width: 40%;
+        width: 100%;
+        margin-top: 2%;
     }
     .popular .box-container .box img {
-        height: 18rem;
+        height: 15rem;
         width: 100%;
     }
     .popular .box-container {
@@ -1059,78 +1030,48 @@ img {
         height: 100%;
         flex-direction: column-reverse;
         width: 100%;
-        margin: 25px auto 0 10px;
+        margin: 25px auto 30px 0;
+        background: #333;
     }
     .container .left-side iframe {
         width: 100%;
         height: 30vh;
+    }
+    .footer-s {
+        font-size: 1.5rem;
+    }
+    .footer__title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .footer__logo {
+        display: none;
+    }
+    .footer__container {
+        float: right;
+    }
+    .contact-footer {
+        font-size: 1.5rem;
+        color: #01130ebd;
+        margin-right: 0;
+    }
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__content1:before {
+        display: none;
+    }
+    .text-one {
+        font-size: 10px;
+        font-weight: bold;
+        margin-right: 2px;
+    }
+    .footer__link {
+        font-size: 12px;
     }
 }
 
 @media (min-width:600px) {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
-
-@media only screen and (max-width: 480px) {
-    .popular .box-container .box {
-        width: 40%;
-    }
-    .popular .box-container .box img {
-        height: 18rem;
-        width: 100%;
-    }
-    .popular .box-container {
-        width: 100%;
-    }
-  .container {
-        width: 100%;
-        background: #fff;
-        border-radius: 3px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-wrap: wrap;
-        margin: 25px auto 0 0;
-        padding: 20px 20px 0px 0;
-        height: 75vh;
-    }
-    .container .left-side {
-        width: 50%;
-        height: auto;
-        flex: 50%;
-        margin-top: 20px;
-    }
-    .container .left-side iframe {
-        width: 100%;
-        height: 50vh;
-        margin-top: 20px;
-    }
-    .left-side .details {
-        margin: 14px;
-        text-align: right;
-    }
-    .phone1 {
-        text-align: right;
-        float: right;
-    }
-    .left-side .details .topic {
-        font-size: 18px;
-        font-weight: 500;
-        font-family: "Tajawal";
-        font-weight: 700;
-    }
-    .left-side .details .text-one,
-    .left-side .details {
-        font-size: 14px;
-        color: #afafb6;
-        font-family: "Tajawal";
-        font-weight: 700;
-    }
-    .container .right-side {
-        width: 50%;
-        height: auto;
-        flex: 50%;
-    }
-}
-
-
-
