@@ -256,9 +256,7 @@ img {
         height: 10rem;
         width: 100%;
         margin-top: 0;
-     display:fixed;
-     top:0;
-     bottom:0;
+    
      
     }
     .nav__list {
