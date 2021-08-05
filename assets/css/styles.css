@@ -325,11 +325,7 @@ img {
     }
 }
 
-@media screen and (max-width: 469px) {
-    .nav {
-        margin-top: 15%;
-    }
-}
+
 
 
 /* Change background header */
