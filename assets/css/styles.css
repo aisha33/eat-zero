@@ -997,7 +997,7 @@
                         border-radius: 3px;
                     }
                         .button__home {
-                        padding: 5px;
+                        padding: 5px 8px;
                         font-size: 10px;
                     }
                     .home__subtitle span {
