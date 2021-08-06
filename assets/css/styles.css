@@ -840,13 +840,7 @@
                     .home__container {
                         flex-direction: column;
                     }
-                    .button__home {
-                        text-align: center;
-                        margin-right: 0;
-                    }
-                    .btn {
-                        margin-right: 0;
-                    }
+                
                     .social {
                         display: none;
                     }
@@ -984,16 +978,7 @@
                     .home {
                         background-position: bottom;
                     }
-                    .button__home {
-                        float: none;
-                        padding: 0;
-                        font-weight: 700;
-                        margin-right: 0;
-                        font-size: 12px;
-                    }
-                    .btn {
-                        margin-right: 0;
-                    }
+                   
                     .nav__link {
                         font-size: 20px;
                     }
@@ -1010,5 +995,15 @@
                         border: 1px solid;
                         padding: 4px 8px;
                         border-radius: 3px;
+                    }
+                        .button__home {
+                        padding: 5px;
+                        font-size: 10px;
+                    }
+                    .home__subtitle span {
+                        font-size: 16px;
+                    }
+                    .home__subtitle {
+                        font-size: 16px;
                     }
                 }
